@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import CharacterGrid from "../Characters/CharacterGrid";
+import CharacterGrid from "../CharacterGrid/CharacterGrid";
 
 const Body = () => {
   const [items, setItems] = useState([]);

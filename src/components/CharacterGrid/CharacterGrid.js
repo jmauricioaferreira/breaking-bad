@@ -1,5 +1,6 @@
 import React from "react";
-import { Container } from "../Characters/styles";
+import CharacterCard from "../CharacterCard/CharacterCard";
+import { Container } from "../CharacterGrid/styles";
 
 const CharacterGrid = ({ items, isLoading }) => {
   return isLoading ? (
@@ -7,7 +8,7 @@ const CharacterGrid = ({ items, isLoading }) => {
   ) : (
     <Container>
       {items.map((item) => (
-        <h1 key={item.char_id}>{item.name}</h1>
+        <CharacterCard key={item.char_id} item={item}></CharacterCard>
       ))}
       ;
     </Container>
