@@ -4,23 +4,28 @@ export const Container = styled.div`
   width: 210px;
   height: 300px;
   cursor: pointer;
-  background-color: transparent;
   perspective: 1000px;
+
+  div:hover {
+    transform: rotateY(180deg);
+  }
 
   div {
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: transform 0.8s;
+    transition: transform 1s;
     transform-style: preserve-3d;
+
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
 
     div {
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
-    }
-
-    :hover {
-      transform: rotateY(180deg);
     }
 
     div:nth-child(2) {
@@ -45,12 +50,6 @@ export const Container = styled.div`
           }
         }
       }
-    }
-
-    img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
     }
   }
 `;

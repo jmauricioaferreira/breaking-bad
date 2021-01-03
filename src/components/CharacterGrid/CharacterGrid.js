@@ -1,10 +1,11 @@
 import React from "react";
 import CharacterCard from "../CharacterCard/CharacterCard";
 import { Container } from "../CharacterGrid/styles";
+import Spinner from "../Spinner/Spinner";
 
 const CharacterGrid = ({ items, isLoading }) => {
   return isLoading ? (
-    <h1>Loading...</h1>
+    <Spinner />
   ) : (
     <Container>
       {items.map((item) => (
