@@ -1,3 +1,3 @@
 ### Breaking Bad Characters
 
-<img src="bb.jpg" alt="Breaking Bad home" width="700"/>
+<img src="bb.JPG" alt="Breaking Bad home" width="600"/>
