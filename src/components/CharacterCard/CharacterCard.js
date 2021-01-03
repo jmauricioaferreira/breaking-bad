@@ -4,11 +4,11 @@ import { Container } from "../CharacterCard/styles";
 const CharacterCard = ({ item }) => {
   return (
     <Container>
-      <div className="card-inner">
-        <div className="card-front">
+      <div>
+        <div>
           <img src={item.img} alt="" />
         </div>
-        <div className="card-back">
+        <div>
           <h1>{item.name}</h1>
           <ul>
             <li>

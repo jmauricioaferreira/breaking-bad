@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import CharacterGrid from "../CharacterGrid/CharacterGrid";
+import { Container } from "./styles";
 
 const Body = () => {
   const [items, setItems] = useState([]);
@@ -19,9 +20,9 @@ const Body = () => {
   }, []);
 
   return (
-    <div>
+    <Container>
       <CharacterGrid isLoading={isLoading} items={items} />
-    </div>
+    </Container>
   );
 };
 
